@@ -1,0 +1,53 @@
+<!-- Source: https://www.youtube.com/watch?v=60c4rMq-aH0&t=339s -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>White or Black Text</title>
+    <script src="//unpkg.com/brain.js" defer></script>
+    <script src="script.js" defer></script>
+
+    <style>
+      #color {
+        width: 200px;
+        height: 200px;
+        border: 5px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .white {
+        color: white;
+      }
+
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+      }
+    </style>
+  </head>
+ 
+  <body>
+    <div id="color">
+      <div class="white">White Text</div>
+      <div>Black Text</div>
+      <div id="guess">Guess Text</div>
+    </div>
+
+    <div class="center">
+      <button id="white-button">White</button>
+      <button id="black-button">Black</button>
+    </div>
+ 
+    <div class="center">
+      <button id="print-button">Print</button>
+    </div>
+
+  </body>
+</html>
